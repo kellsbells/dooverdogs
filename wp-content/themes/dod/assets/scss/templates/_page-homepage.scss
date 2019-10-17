@@ -1,0 +1,408 @@
+//--------------------------------------------------------------
+// Styles for [Homepage]
+//--------------------------------------------------------------
+
+.homepage {
+
+	h3 {
+		font-size: 28px;
+		margin: 0;
+		text-transform: uppercase;
+		font-family: $font-alpha;
+		padding-bottom: 20px;
+		letter-spacing: 2px;
+	}
+
+	p {
+		margin: 0;
+		padding: 0;
+	}
+
+	.hero {
+		padding: 20px 0;
+		position: relative;
+
+		@include breakpoint(900px) {
+			padding: 60px 0;
+		}
+
+		.container {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		&-left {
+			flex: 0 0 100%;
+
+			@include breakpoint(900px) {
+				flex: 0 0 50%;
+			}
+
+			p {
+				padding-bottom: 20px;
+				font-size: 14px;
+			}
+		}
+
+		&-right {
+			flex: 0 0 100%;
+
+			@include breakpoint(900px) {
+				flex: 0 0 50%;
+			}
+
+		}
+
+		&-svg {
+			position: relative;
+		}
+
+		svg {
+			width: 100%;
+		}
+
+		&-seperator {
+			position: absolute;
+			bottom: -30%;
+			width: 50%;
+			max-width: 500px;
+			left: -15%;
+			z-index: -1;
+		}
+
+	}
+
+	.dogs {
+		position: relative;
+		
+
+		@include breakpoint(900px) {
+			padding-top: 30px;
+		}
+
+
+		.featured-dogs-seperator {
+			position: absolute;
+		top: 52%;
+		right: -10%;
+		z-index: -1;
+		width: 75%;
+		  max-width: 1000px;
+		}
+
+		.standard-dogs-seperator {
+			position: absolute;
+			bottom: -45%;
+			left: -20%;
+			z-index: -1;
+			width: 50%;
+			max-width: 600px;
+		}
+
+		&__container {
+			display: flex;
+			align-items: stretch;
+			flex-wrap: wrap;
+			text-decoration: none;
+		}
+
+		&__container.featured {
+			flex-direction: column-reverse;
+
+			@include breakpoint(900px) {
+				flex-direction: row;
+			}	
+		}
+
+
+		&__container.featured .single.dog,
+		&__container.featured .single.text {
+			width: calc(100% - 20px);
+
+			@include breakpoint(900px) {
+				width: calc(50% - 20px);
+			}
+		}
+
+		&__container.standard .single.dog {
+			width: calc(100% - 20px);
+
+			@include breakpoint(900px) {
+				width: calc(33.33% - 20px);
+			}
+		}
+
+		.featured .single.dog {
+			.main-photo-container {
+				width: 100%;
+				height: 350px;
+
+				@include breakpoint(900px) {
+					width: 100%;
+					height: 450px;
+				}
+
+				
+			}
+		}
+
+		.single.text {
+			text-align: right;
+			padding-bottom: 30px;
+
+			@include breakpoint(900px) {
+				padding: 0 0 0 30px;
+			}
+
+
+			h2 {
+				text-transform: uppercase;
+				margin: 0 0 20px 0;
+				letter-spacing: .5;
+			}
+
+			p {
+				padding-bottom: 15px;
+			}
+		}
+
+		.single.dog {
+			cursor: pointer;
+			margin: 10px;
+			text-align: center;
+			color: $color-charlie;
+			text-decoration: none;
+			overflow: hidden;
+			box-shadow: $box-shadow;
+			border-radius: 4px;
+
+			&:hover {
+				.details {
+					height: auto;
+				}
+			}
+
+			.main-photo {
+				height: 100%;
+				width: 100%;
+			}
+
+			.main-photo-container {
+				width: 100%;
+				height: 350px;
+
+				@include breakpoint(900px) {
+					width: 100%;
+					height: 300px;
+				}
+
+				
+			}
+
+			img {
+				width: 100%;
+				padding-bottom: 30px;
+			}
+
+			.wrapper {
+				position: relative;
+			}
+
+			.description {
+				position: absolute;
+				background-color: $color-beta;
+				width: 100%;
+				bottom: 0;
+			}
+
+
+			.title {
+				color: $white;
+				background-color: $color-charlie;
+				padding: 10px 0;
+			}
+
+			h3 {
+				padding: 0;
+				margin: 0;
+				font-family: $font-beta;
+				text-transform: uppercase;
+			}
+
+			.details {
+				height: 0;
+
+				p {
+					padding-top: 10px;
+					margin: 0;
+				}
+			}
+
+			.cta {
+				background: $color-alpha;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 8px;
+				color: $white;
+				margin-top: 10px;
+
+
+				p {
+					padding: 0;
+					font-family: $font-beta;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+
+	.help {
+		padding: 40px 0;
+		position: relative;
+		text-align: right;
+
+		@include breakpoint(900px) {
+			padding: 100px 0;
+		}
+
+		.help-seperator {
+			position: absolute;
+			bottom: -50%;
+			right: -5%;
+			z-index: -1;
+			width: 75%;
+			max-width: 700px;
+		}
+
+
+		.link-farm {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			padding-top: 20px;
+
+			@include breakpoint(900px) {
+				flex-wrap: nowrap;
+			}
+		}
+
+		.help-link {
+			width: 100%;
+			margin: 10px;
+			cursor: pointer;
+			box-shadow: $box-shadow;
+			text-decoration: none;
+
+			@include breakpoint(900px) {
+				width: 33%;
+
+				&:hover {
+					transform: scale(1.2);
+			  	transition: all 300ms;
+				}
+			}
+
+			.photo {
+				height: 200px;
+				width: 100%;
+				border-top-right-radius: 4px;
+				border-top-left-radius: 4px;
+			}
+
+			.cta {
+				width: 100%;
+				text-align: center;
+				background-color: $color-charlie;
+				color: $white;
+				padding: 8px 42px;
+				text-transform: uppercase;
+			  text-decoration: none;
+			  font-family: $font-beta;
+			  border-radius: 4px;
+				border-top-right-radius: 0;
+				border-top-left-radius: 0;
+				margin-top: -1px;
+			}
+		}
+
+		h2 {
+			margin: 0;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+	}
+
+
+	.contact {
+		padding: 40px 0;
+		position: relative;
+		overflow: hidden;
+
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+
+			@include breakpoint(900px) {
+				flex-wrap: nowrap;
+			}
+		}
+
+		&-right {
+			flex: 0 0 100%;
+			max-width: 100%;
+
+			@include breakpoint(900px) {
+				flex: 0 0 50%;
+			}
+
+			form {
+				background-color: $color-beta;
+				padding: 20px;
+				border-radius: 4px;
+				box-shadow: $box-shadow;
+
+				input[type="text"],
+				input[type="email"] {
+					border: 1px solid black;
+				}
+
+				textarea {
+					border: 1px solid black;
+				}
+			}
+		}
+
+		&-left {
+			padding: 0 40px 20px 0;
+			flex: 0 0 100%;
+
+			@include breakpoint(900px) {
+				flex: 0 0 50%;
+			}
+
+			h2 {
+				text-transform: uppercase;
+				margin: 0;
+			}
+
+			img {
+				max-width: 275px;
+				width: 70%;
+				padding-top: 10px;
+				display: none;
+
+				@include breakpoint(900px) {
+					display: block;
+				}
+			}
+			
+		}
+
+	}
+}
+
+

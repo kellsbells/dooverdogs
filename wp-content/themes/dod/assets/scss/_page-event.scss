@@ -1,0 +1,11 @@
+.single-event-page {
+	padding: 40px 0;
+	min-height: calc(100vh - 112px);
+
+	@media (min-width: 768px){
+		.ai1ec-col-sm-3 {
+		  width: auto;
+		}
+	}
+}
+

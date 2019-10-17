@@ -1,0 +1,109 @@
+//--------------------------------------------------------------
+// Structure and High-Level Elements
+//--------------------------------------------------------------
+
+body {
+	position: relative;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.container {
+	@include clearfix;
+	@include box-sizing (border-box);
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+.small-container {
+	@include clearfix;
+	@include box-sizing (border-box);
+	max-width: 550px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+.site-content {
+	padding-top: 80px;
+	min-height: calc(100vh - 49px);
+
+	@include breakpoint(900px) {
+		padding-top: 55px;
+	}
+}
+
+.error-404 {
+	//background-color: $background-404-purple;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+
+	.diagonal {
+		@include clearfix;
+		//background-color: $background-black-purple;
+		opacity: .25;
+		transform: rotate(30deg);
+		z-index: 0;
+		width: 100%;
+		margin-top: -20%;
+		height: 400%;
+		position: absolute;
+		overflow: hidden;
+		display: none;
+
+		@include breakpoint ($break-large) {
+			display: block;
+		}
+
+		@include breakpoint (1300px) {
+			height: 500%;
+		}
+
+		@include breakpoint (1600px) {
+			height: 600%;
+		}
+
+		@include breakpoint (1900px) {
+			display: none;
+		}
+	}
+}
+
+.error-image {
+	width: 100%;
+	text-align: center;
+	padding-top: 40vh;
+
+	@include breakpoint ($break-large) {
+		padding-top: 30vh;
+	}
+
+	img {
+		max-width: 850px;
+		width: 90%;
+	}
+}
+
+.error-text {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding-top: 45vh;
+
+
+	p {
+		font-size: 24px;
+		font-size: 2.4rem;
+		color: $white;
+		max-width: 320px;
+		margin: 0 auto;
+	}
+}
+
+ul {
+	margin: 0;
+}
