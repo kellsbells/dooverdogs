@@ -1,0 +1,60 @@
+//--------------------------------------------------------------
+// Variables
+//--------------------------------------------------------------
+
+// -------------------
+// Typography / Rhythm
+// -------------------
+
+$space: 20px;
+
+
+
+// ------
+// Colors
+// ------
+
+$white: #FFF;
+$black: #000;
+
+
+$color-alpha: #084B5B;
+$color-beta: #e9e9ea;
+$color-beta-dark: #747475;
+$color-charlie: #37123C;
+
+
+$box-shadow: 0px 0px 6px 0px $color-beta-dark;
+
+
+// -----
+// Fonts
+// -----
+
+
+$font-alpha: 'Montserrat', sans-serif;
+$font-beta: 'Open Sans Condensed', sans-serif;
+
+
+// -----------
+// Breakpoints
+// -----------
+
+$break-small: 480px;
+$break-medium: 720px;
+$break-large: 960px;
+$break-xl: 1800px;
+
+$max-width: 1200px;
+
+
+// ----
+// Grid
+// ----
+
+$susy: (
+    columns: 12,
+    container: $max-width,
+    gutters: 0,
+    output: float
+);

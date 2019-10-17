@@ -1,0 +1,60 @@
+//--------------------------------------------------------------
+// Form Fields and Layout
+//--------------------------------------------------------------
+
+
+.button {
+	background-color: $color-charlie;
+	border: 2px solid $color-charlie;
+	color: $white;
+	padding: 8px 42px;
+	transition: all 600ms ease;
+	text-transform: uppercase;
+	display: inline-block;
+    width: auto;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: $font-beta;
+
+	&:hover {
+		border-color: $color-alpha;
+		color: $color-alpha;
+		background-color: transparent;
+	}
+}
+
+.contact-form {
+
+	input,
+	textarea {
+		width: 100%;
+		padding: 8px;
+		outline: 0;
+		border: 0;
+		margin-top: 5px;
+	}
+
+	label {
+		font-size: 14px;
+	}
+
+	input[type='submit'] {
+		background-color: $color-charlie;
+		border: 2px solid $color-charlie;
+		color: $white;
+		padding: 8px 42px;
+		transition: all 600ms ease;
+		text-transform: uppercase;
+		display: inline-block;
+	    width: auto;
+	    text-decoration: none;
+	    border-radius: 4px;
+	    font-family: $font-beta;
+
+		&:hover {
+			border-color: $color-alpha;
+			color: $color-alpha;
+			background-color: transparent;
+		}
+	}
+}

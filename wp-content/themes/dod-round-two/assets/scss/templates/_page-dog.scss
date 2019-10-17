@@ -1,0 +1,95 @@
+//--------------------------------------------------------------
+// Styles for [Single Dog Page]
+//--------------------------------------------------------------
+
+.dog {
+	> .container {
+		padding: 80px 40px 0 40px;
+		flex-wrap: wrap;
+
+		@include breakpoint(900px) {
+			flex-wrap: nowrap;
+		}
+	}
+
+	.active-image {
+		width: 300px;
+		height: 300px;
+		box-shadow: $box-shadow;
+		margin-bottom: 15px;
+	}
+
+	.file-list-image {
+		width: 50px;
+		height: 50px;
+		border: 2px solid $white;
+	}
+
+	.file-list-wrap {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.file-list-image.active {
+		border: 2px solid $color-alpha;
+	}
+
+	.container {
+		display: flex;
+	}
+
+	&__title {
+		padding-top: 20px;
+	}
+
+	&__photos {
+		max-width: 300px;
+		width: 100%;
+	}
+
+	&__wrapper {
+		@include breakpoint(900px) {
+			padding-left: 40px;
+		}	
+	}
+
+	&__text {
+		font-style: italic;
+		padding-bottom: 15px;
+	}
+
+	&__content {
+		font-family: $font-beta;
+
+		.about {
+			font-family: $font-alpha;
+		}
+	}
+
+	&__contact {
+		padding: 40px 0;
+		
+
+		@include breakpoint(900px) {
+			padding: 100px 0;
+		}
+
+		.container {
+			display: block;
+		}
+
+		.wrapper {
+			background-color: $color-beta;
+			padding: 20px;
+			border-radius: 4px;
+			box-shadow: $box-shadow;
+		}
+	}
+
+	&__title {
+		h1 {
+			margin: 0;
+			padding-bottom: 10px;
+		}
+	}
+}

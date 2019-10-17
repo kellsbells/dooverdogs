@@ -1,0 +1,18 @@
+@media (max-width:799px){
+	.single-event-page {
+		padding: 20px 0;
+		min-height: calc(100vh - 86px);
+	}
+}
+
+@media (min-width:800px){
+	.single-event-page {
+		padding: 80px 0 40px;
+		min-height: calc(100vh - 56px);
+	}
+}
+@media (min-width:768px){
+	.single-event-page .ai1ec-col-sm-3{
+		width: auto !important;
+	}
+}
