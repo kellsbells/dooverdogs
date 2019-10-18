@@ -550,6 +550,11 @@ h5,
 h6 {
   clear: both; }
 
+h2 {
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: .5; }
+
 h3 {
   font-size: 18px;
   font-size: 1.8rem; }
@@ -1335,6 +1340,57 @@ big {
       @media (min-width: 900px) {
         .homepage .contact-left img {
           display: block; } }
+
+.about {
+  min-height: calc(100vh - 104px); }
+  .about section {
+    padding: 60px 0 40px; }
+  .about .about_sponsors,
+  .about .team {
+    padding: 60px 0;
+    text-align: right; }
+    .about .about_sponsors .all-sponsors,
+    .about .team .all-sponsors {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .about .about_sponsors .single-sponsor,
+    .about .team .single-sponsor {
+      background-color: #e9e9ea;
+      display: block;
+      width: calc(100% - 20px);
+      position: relative;
+      margin: 10px;
+      text-decoration: none;
+      box-shadow: 0px 0px 6px 0px #747475;
+      cursor: pointer; }
+      @media (min-width: 900px) {
+        .about .about_sponsors .single-sponsor,
+        .about .team .single-sponsor {
+          width: calc(33.33% - 20px); } }
+      .about .about_sponsors .single-sponsor:hover .description,
+      .about .team .single-sponsor:hover .description {
+        background-color: #084B5B; }
+      .about .about_sponsors .single-sponsor .photo-container,
+      .about .team .single-sponsor .photo-container {
+        width: 100%;
+        height: 300px;
+        padding: 10px; }
+      .about .about_sponsors .single-sponsor .photo,
+      .about .team .single-sponsor .photo {
+        width: 100%;
+        height: 100%; }
+      .about .about_sponsors .single-sponsor .description,
+      .about .team .single-sponsor .description {
+        background-color: #37123C; }
+      .about .about_sponsors .single-sponsor h3,
+      .about .team .single-sponsor h3 {
+        color: #FFF;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Open Sans Condensed", sans-serif; }
 
 .secondary {
   min-height: calc(100vh - 104px); }

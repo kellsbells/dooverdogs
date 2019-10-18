@@ -85,7 +85,7 @@ gulp.task('js', ['lint'], function() {
 // Watch
 
 gulp.task('watch', function() {
-	
+	console.log('im in watch');
 	gulp.watch(path.WATCH_JS, ['js']);
 	gulp.watch(path.WATCH_CSS, ['sass']);
 	livereload.listen({ start: true });

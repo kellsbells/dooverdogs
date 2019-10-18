@@ -80,7 +80,7 @@ class DOD_Admin {
 			'has_archive'        => true,
 			'hierarchical'       => false,
 			'labels'             => $dogs_labels,
-			'menu_icon'          => 'dashicons-admin-users',
+			'menu_icon'          => 'dashicons-heart',
 			'menu_position'      => null,
 			'public'             => true,
 			'publicly_queryable' => true,
@@ -95,7 +95,7 @@ class DOD_Admin {
 			),
 		);
 
-		// Dog post type
+		// Sponsor post type
 		$sponsors_labels = array(
 			'add_new'            => _x( 'Add New', 'sponsor', 'ps' ),
 			'add_new_item'       => __( 'Add New Sponsor', 'ps' ),
@@ -118,7 +118,7 @@ class DOD_Admin {
 			'has_archive'        => false,
 			'hierarchical'       => false,
 			'labels'             => $sponsors_labels,
-			'menu_icon'          => 'dashicons-admin-users',
+			'menu_icon'          => 'dashicons-groups',
 			'menu_position'      => null,
 			'public'             => true,
 			'publicly_queryable' => true,
@@ -133,8 +133,47 @@ class DOD_Admin {
 			),
 		);
 
+		// Volunteer post type
+		$volunteers_labels = array(
+			'add_new'            => _x( 'Add New', 'volunteer', 'ps' ),
+			'add_new_item'       => __( 'Add New Volunteer', 'ps' ),
+			'all_items'          => __( 'All Volunteers', 'ps' ),
+			'edit_item'          => __( 'Edit Volunteer', 'ps' ),
+			'menu_name'          => _x( 'Volunteers', 'admin menu', 'ps' ),
+			'name_admin_bar'     => _x( 'Volunteer', 'add new on admin bar', 'ps' ),
+			'name'               => _x( 'Volunteers', 'post type general name', 'ps' ),
+			'new_item'           => __( 'New Volunteer', 'ps' ),
+			'not_found'          => __( 'No Volunteers found.', 'ps' ),
+			'not_found_in_trash' => __( 'No Volunteers found in Trash.', 'ps' ),
+			'parent_item_colon'  => __( 'Parent Volunteer:', 'ps' ),
+			'search_items'       => __( 'Search Volunteers', 'ps' ),
+			'singular_name'      => _x( 'Volunteer', 'post type singular name', 'ps' ),
+			'view_item'          => __( 'View Volunteer', 'ps' ),
+		);
+
+		$volunteers_args = array(
+			'capability_type'    => 'post',
+			'has_archive'        => false,
+			'hierarchical'       => false,
+			'labels'             => $volunteers_labels,
+			'menu_icon'          => 'dashicons-universal-access',
+			'menu_position'      => null,
+			'public'             => true,
+			'publicly_queryable' => true,
+			'query_var'          => true,
+			'rewrite'            => array(
+				'slug' => 'volunteers',
+			),
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'supports'           => array(
+				'title', 'thumbnail'
+			),
+		);
+
 		register_post_type( 'dogs', $dogs_args );
 		register_post_type( 'sponsors', $sponsors_args );
+		register_post_type( 'volunteers', $volunteers_args );
 	}
 	/**
 	 * Register settings notices for display

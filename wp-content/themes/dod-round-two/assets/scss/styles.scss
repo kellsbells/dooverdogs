@@ -4,9 +4,6 @@
 // >>> TABLE OF CONTENTS:
 //--------------------------------------------------------------
 
-// Susy
-@import "../vendor/susy/sass/susy";
-
 // Normalize.css
 @import "../vendor/normalize-scss/normalize";
 
@@ -51,6 +48,7 @@
 
 // Template-Specific Styles
 @import "templates/_page-homepage.scss";
+@import "templates/_page-about.scss";
 @import "templates/_page-secondary.scss";
 @import "templates/_page-dog.scss";
 @import "templates/_page-sponsors.scss";

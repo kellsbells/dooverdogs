@@ -46,15 +46,3 @@ $break-large: 960px;
 $break-xl: 1800px;
 
 $max-width: 1200px;
-
-
-// ----
-// Grid
-// ----
-
-$susy: (
-    columns: 12,
-    container: $max-width,
-    gutters: 0,
-    output: float
-);
