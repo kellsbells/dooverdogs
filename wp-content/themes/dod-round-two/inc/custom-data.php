@@ -95,7 +95,7 @@ class DOD_Admin {
 			),
 		);
 
-		// Dog post type
+		// Sponsor post type
 		$sponsors_labels = array(
 			'add_new'            => _x( 'Add New', 'sponsor', 'ps' ),
 			'add_new_item'       => __( 'Add New Sponsor', 'ps' ),
@@ -132,6 +132,7 @@ class DOD_Admin {
 				'title',
 			),
 		);
+		
 
 		register_post_type( 'dogs', $dogs_args );
 		register_post_type( 'sponsors', $sponsors_args );
@@ -267,6 +268,20 @@ class DOD_Admin {
 			'priority'      => 'high',
 			'show_names'    => true, // Show field names on the left
 			'object_types'  => array( 'dogs' ), // Post type
+		) );
+
+		$cmb_dogs->add_field( array(
+			'name'             => esc_html__( 'Availability', 'cmb2' ),
+			'id'               => $prefix . 'availability',
+			'type'             => 'select',
+			'show_option_none' => false,
+			'options'          => array(
+				'Now' => esc_html__( 'Now', 'cmb2' ),
+				'Soon'   => esc_html__( 'Soon', 'cmb2' ),
+			),
+			'attributes'  => array(
+		 		'required'    => 'required',
+		 	),
 		) );
 
 		// Text field

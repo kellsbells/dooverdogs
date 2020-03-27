@@ -4,6 +4,12 @@
 
 .homepage {
 
+	h2 {
+		text-transform: uppercase;
+		margin: 0 0 20px 0;
+		letter-spacing: .5;
+	}
+
 	h3 {
 		font-size: 28px;
 		margin: 0;
@@ -258,6 +264,11 @@
 		}
 	}
 
+	.coming-soon {
+		.text {
+			padding-bottom: 20px;
+		}
+	}
 
 	.help {
 		padding: 40px 0;

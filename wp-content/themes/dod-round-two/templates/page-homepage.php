@@ -178,7 +178,13 @@ get_header();
 			<div class="dogs__container featured">
 				<?php 
 
-					$args = array( 'post_type' => 'dogs', 'posts_per_page' => 1 );
+					$args = array(
+						'meta_key'     => '_dod_availability',
+						'meta_value'   => 'Now',
+						'post_type'    => 'dogs',
+						'posts_per_page' => 1
+					);
+
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post();
 
@@ -236,8 +242,14 @@ get_header();
 			<div class="dogs__container standard">
 
 				<?php 
+					$args = array(
+						'meta_key'     => '_dod_availability',
+						'meta_value'   => 'Now',
+						'post_type'    => 'dogs',
+						'posts_per_page' => 9999,
+						'offset' => 1,
+					);
 
-					$args = array( 'post_type' => 'dogs', 'offset' => 1, 'posts_per_page' => 9999 );
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post();
 
@@ -282,6 +294,70 @@ get_header();
 		<img class="standard-dogs-seperator" src="<?php echo $imagedir ?>/teal-watercolor-2.png" alt="Decorative Watercolor Splash">
 	</section>
 
+
+	<section class="dogs coming-soon">
+		<div class="container">
+			
+			<div class="dogs__container standard">
+
+				<?php 
+					$args = array(
+						'meta_key'     => '_dod_availability',
+						'meta_value'   => 'Soon',
+						'post_type'    => 'dogs',
+						'posts_per_page' => 9999,
+					);
+
+					$loop = new WP_Query( $args );
+
+					if ( $loop->have_posts() ) : ?>
+						<div class="text">
+							<h2>Coming Soon</h2>		
+							<p>These pups are still making their way to Do Over Dogs or might even be going through some medical treatments. They aren't available to be adopted immediately, but we are still accepting applications to make them part of your forever family!</p>
+						</div>	
+					<?php endif; 
+					
+					while ( $loop->have_posts() ) : $loop->the_post();
+						$main_photo = array_values(get_post_meta( $post->ID, '_dod_photos', true ));
+					  ?>
+
+					  <a href="<?php the_permalink(); ?>" class="single dog">
+							<div class="wrapper">
+
+
+								<div class="main-photo-container"> 
+									<div class="main-photo" style="background: url(<?php echo $main_photo[0] ?>) no-repeat center center; background-size: cover;">
+									</div>
+								</div>
+
+								<div class="description">
+
+									<div class="title">
+										<h3><?php the_title(); ?></h3>
+									</div>
+								
+									<div class="details">
+										<p><?php echo get_post_meta( $post->ID, '_dod_breed', true ) ?></p>
+										<small>Size: <?php echo get_post_meta( $post->ID, '_dod_size', true ) ?></small><i class="fas fa-paw" aria-hidden="true"></i>
+										<small>Age: <?php echo get_post_meta( $post->ID, '_dod_age', true ) ?></small>
+
+
+										<div class="cta">
+											<p>Click to See More</p>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+						</a>
+					  <?php
+					endwhile;
+				?>
+			</div>	
+		</div>
+		<img class="standard-dogs-seperator" src="<?php echo $imagedir ?>/teal-watercolor-2.png" alt="Decorative Watercolor Splash">
+	</section>
 
 	<section class="help" id="help">
 		<div class="container">
