@@ -405,11 +405,6 @@ td.ai1ec-avail-block {
 	color: red;
 }
 
-#ai1ec_review_enjoying_question,
-#ai1ec_review_not_enjoying_question,
-#ai1ec_not_enjoying_popup {
-	padding-top: 30px;
-}
 /* Range input (from jQuery Tools) */
 
 /* slider root element */

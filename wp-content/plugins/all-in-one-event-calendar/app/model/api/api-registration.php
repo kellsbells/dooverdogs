@@ -249,4 +249,28 @@ class Ai1ec_Api_Registration extends Ai1ec_Api_Abstract {
         }
     }
 
+    /**
+     * Save login info
+     */
+    public function saveLoginInfo( $message, $authToken, $email ) {
+        $successful = false;
+
+        // Save calendar ID as 0 first, otherwise the auth data won't be saved in the database before creating/finding the calendar
+        $this->save_ticketing_settings( $message, true, $authToken, 0, $email );
+
+        // Check for calendar registration
+        $calendar_id = $this->_get_ticket_calendar();
+        // Error - No calendar id found
+        if ( $calendar_id <= 0 ) {
+            $this->clear_ticketing_settings();
+        } else {
+            $this->has_payment_settings();
+            $this->get_subscriptions( true );
+            $this->sync_api_settings();
+
+            $successful = true;
+        }
+
+        return $successful;
+    }
 }

@@ -88,12 +88,17 @@ class Ai1ec_Filesystem_Misc extends Ai1ec_Base {
      * @throws Ai1ec_Bootstrap_Exception
      */
     public function get_current_theme_hashmap() {
-        $cur_theme     = $this->_registry->get( 'model.option' )->get(
-            'ai1ec_current_theme'
-        );
-        $file_location = $cur_theme['theme_dir'] . DIRECTORY_SEPARATOR .
-                         'less.sha1.map.php';
-        if ( ! file_exists( $file_location ) ) {
+        $cur_theme     = $this->_registry->get( 'model.option' )->get( 'ai1ec_current_theme' );
+
+        if ( ! $cur_theme || ( isset( $cur_theme['stylesheet'] ) && 'saas' === $cur_theme['stylesheet'] ) ) {
+            return null;
+        }
+
+        $file_location = $cur_theme['theme_dir'] . DIRECTORY_SEPARATOR . 'less.sha1.map.php';
+        if ( ! file_exists( $file_location ) || ! is_readable( $file_location ) || ! @file_get_contents( $file_location ) ) {
+            // Delete theme options
+            $this->_registry->get( 'model.option' )->delete( 'ai1ec_current_theme' );
+
             return null;
         }
 
@@ -127,14 +132,14 @@ class Ai1ec_Filesystem_Misc extends Ai1ec_Base {
      * Returns theme structrure for one of core themes.
      *
      * @param string $stylesheet Theme stylesheet. Expected one of
-     *                           ['plana','vortex','umbra','gamma'].
+     *                           ['plana','vortex','umbra','gamma','journey'].
      *
      * @return array Theme structure
      *
      * @throws Ai1ec_Invalid_Argument_Exception
      */
     public function build_theme_structure( $stylesheet ) {
-        $themes = array( 'plana', 'vortex', 'umbra', 'gamma' );
+        $themes = array( 'plana', 'vortex', 'umbra', 'gamma', 'journey' );
         if ( ! in_array( $stylesheet, $themes ) ) {
             throw new Ai1ec_Invalid_Argument_Exception(
                 'Theme ' . $stylesheet . ' compilation is not supported.'

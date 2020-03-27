@@ -160,15 +160,16 @@ get_header();
 				</p>
 
 				<a class="button" href="#dogs">Meet the Dogs</a>
-			</div>
+				<a class="button" style="margin-top: 10px;" href="/adoption-application-1">Fill Out An Adoption Application</a>			
+</div>
 
 			<div class="hero-right">
-				<img src="<?php echo $imagedir ?>/hero-watercolor.png">
+				<img src="<?php echo $imagedir ?>/hero-watercolor.png" alt="Decorative Watercolor Splash">
 			</div>
 
 		</div>	
 
-		<img class="hero-seperator" src="<?php echo $imagedir ?>/teal-watercolor.png">
+		<img class="hero-seperator" src="<?php echo $imagedir ?>/teal-watercolor.png" alt="Decorative Watercolor Splash">
 	</section>
 
 
@@ -226,7 +227,7 @@ get_header();
 				?>		
 			</div>
 		</div>
-		<img class="featured-dogs-seperator" src="<?php echo $imagedir ?>/teal-purple-watercolor.png">
+		<img class="featured-dogs-seperator" src="<?php echo $imagedir ?>/teal-purple-watercolor.png" alt="Decorative Watercolor Splash">
 
 	</section>
 
@@ -278,7 +279,7 @@ get_header();
 				?>
 			</div>	
 		</div>
-		<img class="standard-dogs-seperator" src="<?php echo $imagedir ?>/teal-watercolor-2.png">
+		<img class="standard-dogs-seperator" src="<?php echo $imagedir ?>/teal-watercolor-2.png" alt="Decorative Watercolor Splash">
 	</section>
 
 
@@ -313,7 +314,7 @@ get_header();
 								Learn about Volunteering
 							</div>
 						</a>
-						<a href="https://www.paypal.me/dooverdogs" target="_blank" class="help-link">
+						<a href="https://www.paypal.me/dooverdogs" rel="noopener" target="_blank" class="help-link">
 							<div class="photo" style="background: url(<?php echo $imagedir ?>/dod-3.jpg) no-repeat center center; background-size: cover;">
 							</div>
 							<div class="cta">
@@ -326,7 +327,7 @@ get_header();
 
 				</div>
 		</div>
-		<img class="help-seperator" src="<?php echo $imagedir ?>/purple-watercolor.png">
+		<img class="help-seperator" src="<?php echo $imagedir ?>/purple-watercolor.png" alt="Decorative Watercolor Splash">
 	</section>
 
 	<section class="contact" id="contact">
@@ -336,7 +337,7 @@ get_header();
 				<div class="contact-left">
 					<h2>Contact Do Over Dogs</h2>
 					<p>For general questions or adoption inquiries please contact us!</p>
-					<img src="<?php echo $imagedir ?>/dod-logo.jpg">
+					<img src="<?php echo $imagedir ?>/dod-logo.jpg" alt="Do Over Dogs Logo">
 				</div>
 
 				<div class="contact-right">
@@ -350,3 +351,4 @@ get_header();
 </div>	
 
 <?php get_footer();
+

@@ -578,10 +578,6 @@ class Ai1ec_Javascript_Controller {
                 'no_delete_text'  => Ai1ec_I18n::__( 'You have sold tickets for this ticket type. Please change it\'s status to "Canceled" and make refunds to all users that purchased tickets.' ),
                 'cancel_message'  => Ai1ec_I18n::__( 'You have sold tickets for this ticket type. Please make refunds to all users that purchased tickets' )
             ),
-            'review'                         => array(
-                'message_sent'  => Ai1ec_I18n::__( 'Your message has been sent. Thank you for your feedback.' ),
-                'message_error' => Ai1ec_I18n::__( 'Your message has not been sent. Please try again or contact us.' )
-            ),
             'load_views_error'                 => Ai1ec_I18n::__(
                 'Something went wrong while fetching events.<br>The request status is: %STATUS% <br>The error thrown was: %ERROR%'
             ),

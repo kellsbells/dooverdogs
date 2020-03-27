@@ -151,13 +151,7 @@ class Ai1ec_View_Admin_Settings extends Ai1ec_View_Admin_Abstract {
                     'apis'           => Ai1ec_I18n::__( 'External Services' ),
                     'cache'          => Ai1ec_I18n::__( 'Cache Report' ),
                 )
-            ),
-            'extensions' => array(
-                'name' => Ai1ec_I18n::__( 'Add-ons' ),
-                'items' => array(
-                    'twittertab'       => Ai1ec_I18n::__( 'Twitter' ),
-                )
-            ),
+            )
         );
 
         // let other extensions add tabs.

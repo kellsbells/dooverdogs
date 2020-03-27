@@ -44,13 +44,24 @@ abstract class Ai1ec_View_Admin_Abstract extends Ai1ec_Base {
      * @return string
      */
     public function get_url() {
-        return  add_query_arg(
+        return add_query_arg(
             array(
                 'post_type' => AI1EC_POST_TYPE,
                 'page'      => AI1EC_PLUGIN_NAME . '-' . $this->_page_suffix,
             ),
             ai1ec_admin_url( 'edit.php' )
         );
+    }
+
+    public function isLoggedIn() {
+        $signup_available        = $this->_api_registration->is_api_sign_up_available();
+        $signed_to_api           = $this->_api_registration->is_signed();
+
+        if ( $signup_available && ! $signed_to_api ) {
+            return false;
+        }
+
+        return true;
     }
 
     /**

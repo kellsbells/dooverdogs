@@ -1,19 +1,19 @@
-# Copyright (C) 2018 All-in-One Event Calendar by Time.ly
+# Copyright (C) 2020 All-in-One Event Calendar by Time.ly
 # This file is distributed under the same license as the All-in-One Event Calendar by Time.ly package.
 msgid ""
 msgstr ""
-"Project-Id-Version: All-in-One Event Calendar by Time.ly 2.5.32\n"
+"Project-Id-Version: All-in-One Event Calendar by Time.ly 2.6.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/all-in-one-event-calendar\n"
-"POT-Creation-Date: 2018-06-26 20:47:08+00:00\n"
+"POT-Creation-Date: 2020-02-05 18:45:02+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: app/controller/extension-license.php:53 app/view/admin/add-ons.php:26
-#: app/view/admin/add-ons.php:27 app/view/admin/settings.php:156
+#: app/view/admin/add-ons.php:27
 msgid "Add-ons"
 msgstr ""
 
@@ -29,7 +29,7 @@ msgstr ""
 msgid "Calendar Themes"
 msgstr ""
 
-#: app/controller/front.php:1069
+#: app/controller/front.php:1064
 msgid ""
 "Your database is found to be corrupt. Likely previous update has failed. "
 "Please restore All-in-One Event Calendar tables from a backup and retry."
@@ -284,33 +284,25 @@ msgid ""
 "that purchased tickets"
 msgstr ""
 
-#: app/controller/javascript.php:582
-msgid "Your message has been sent. Thank you for your feedback."
-msgstr ""
-
-#: app/controller/javascript.php:583
-msgid "Your message has not been sent. Please try again or contact us."
-msgstr ""
-
-#: app/controller/javascript.php:585
+#: app/controller/javascript.php:581
 msgid ""
 "Something went wrong while fetching events.<br>The request status is: %STATUS"
 "% <br>The error thrown was: %ERROR%"
 msgstr ""
 
-#: app/controller/javascript.php:588
+#: app/controller/javascript.php:584
 msgid "Response text received from server"
 msgstr ""
 
-#: app/controller/javascript.php:589
+#: app/controller/javascript.php:585
 msgid "Click here for technical details"
 msgstr ""
 
-#: app/controller/javascript.php:594
+#: app/controller/javascript.php:590
 msgid "The end date can't be earlier than the start date."
 msgstr ""
 
-#: app/controller/javascript.php:595
+#: app/controller/javascript.php:591
 msgid "For week and day view, you must select an interval of at least 6 hours."
 msgstr ""
 
@@ -492,26 +484,6 @@ msgstr ""
 
 #: app/model/event/parent.php:193
 msgid "Base Event"
-msgstr ""
-
-#: app/model/review.php:169
-msgid "Feedback provided by user"
-msgstr ""
-
-#: app/model/review.php:171 public/admin/box_eventbrite.php:32
-msgid "Name"
-msgstr ""
-
-#: app/model/review.php:173
-msgid "E-mail"
-msgstr ""
-
-#: app/model/review.php:175
-msgid "Site URL"
-msgstr ""
-
-#: app/model/review.php:177
-msgid "Message"
 msgstr ""
 
 #: app/model/settings.php:401
@@ -727,22 +699,11 @@ msgid ""
 "strong>."
 msgstr ""
 
-#: app/model/settings.php:870
-msgid ""
-"<div class=\"ai1ec-twitterinfo-wrap\"><b>Twitter</b><br>This feature allows "
-"your events to be automatically tweeted before they happen. Great way to add "
-"regular content to your twitter roll and keep your audience informed of all "
-"your great events. This feature is not yet enabled in your product. Please "
-"purchase it as a standalone for a low annual subscription or inside the Core"
-"+ bundle. <a target=\"_blank\" href=\"https://time.ly/wordpress-calendar-"
-"plugin/addons/\">Click here.</a></div>"
-msgstr ""
-
-#: app/model/settings.php:891
+#: app/model/settings.php:878
 msgid "Move calendar into this DOM element"
 msgstr ""
 
-#: app/model/settings.php:893
+#: app/model/settings.php:880
 msgid ""
 "Optional. Use this JavaScript-based shortcut to place the\n"
 "                        calendar a DOM element other than the usual page "
@@ -759,24 +720,24 @@ msgid ""
 "                        by the calendar."
 msgstr ""
 
-#: app/model/settings.php:912
+#: app/model/settings.php:899
 msgid ""
 "<strong>Skip <tt>in_the_loop()</tt> check </strong> that protects against "
 "multiple calendar output"
 msgstr ""
 
-#: app/model/settings.php:915
+#: app/model/settings.php:902
 msgid ""
 "Try enabling this option if your calendar does not appear on the calendar "
 "page. It is needed for compatibility with a small number of themes that call "
 "<tt>the_content()</tt> from outside of The Loop. Leave disabled otherwise."
 msgstr ""
 
-#: app/model/settings.php:927
+#: app/model/settings.php:914
 msgid "Disable <strong>gzip</strong> compression."
 msgstr ""
 
-#: app/model/settings.php:930
+#: app/model/settings.php:917
 msgid ""
 "Use this option if calendar is unresponsive. <a target=\"_blank\" href="
 "\"https://time.ly/document/user-guide/troubleshooting/disable-gzip-"
@@ -784,41 +745,41 @@ msgid ""
 "gzip is disabled by default for maximum compatibility.)"
 msgstr ""
 
-#: app/model/settings.php:942
+#: app/model/settings.php:929
 msgid "Use frontend rendering."
 msgstr ""
 
-#: app/model/settings.php:945
+#: app/model/settings.php:932
 msgid ""
 "Renders calendar views on the client rather than the server; can improve "
 "performance."
 msgstr ""
 
-#: app/model/settings.php:957
+#: app/model/settings.php:944
 msgid "Use advanced JS cache."
 msgstr ""
 
-#: app/model/settings.php:960
+#: app/model/settings.php:947
 msgid "Cache dynamically generated JS files. Improves performance."
 msgstr ""
 
-#: app/model/settings.php:972
+#: app/model/settings.php:959
 msgid ""
 "<strong>Link CSS</strong> in <code>&lt;head&gt;</code> section when file "
 "cache is unavailable."
 msgstr ""
 
-#: app/model/settings.php:975
+#: app/model/settings.php:962
 msgid ""
 "Use this option if file cache is unavailable and you would prefer to serve "
 "CSS as a link rather than have it output inline."
 msgstr ""
 
-#: app/model/settings.php:987
+#: app/model/settings.php:974
 msgid "Current <strong>robots.txt</strong> on this site"
 msgstr ""
 
-#: app/model/settings.php:991
+#: app/model/settings.php:978
 msgid ""
 "The Robot Exclusion Standard, also known as the Robots Exclusion Protocol "
 "or\n"
@@ -832,24 +793,29 @@ msgid ""
 "txt</code> in your root WordPress directory."
 msgstr ""
 
-#: app/model/settings.php:1008
+#: app/model/settings.php:995
 msgid ""
 "<strong>Publicize, promote, and share my events</strong> marked as public on "
 "the Timely network. (<a href=\"%s\" target=\"_blank\">Learn more &#187;</a>)"
 msgstr ""
 
-#: app/model/settings.php:1031
+#: app/model/settings.php:1018
 msgid "Templates cache improves site performance"
 msgstr ""
 
-#: app/model/settings.php:1044
+#: app/model/settings.php:1031
 msgid "Display events in <strong>calendar time zone</strong>"
 msgstr ""
 
-#: app/model/settings.php:1047
+#: app/model/settings.php:1034
 msgid ""
 "If this box is checked events will appear in the calendar time zone with "
 "time zone information displayed on the event details page."
+msgstr ""
+
+#: app/view/admin/activate.php:25 app/view/admin/activate.php:26
+#: lib/theme/list.php:262
+msgid "Activate"
 msgstr ""
 
 #: app/view/admin/add-new-event.php:26
@@ -903,11 +869,11 @@ msgstr ""
 msgid "<span class=\"ai1ec-info-text\">The event was submitted by %s.</span>"
 msgstr ""
 
-#: app/view/admin/add-new-event.php:530
+#: app/view/admin/add-new-event.php:518
 msgid "Set banner image"
 msgstr ""
 
-#: app/view/admin/add-new-event.php:531
+#: app/view/admin/add-new-event.php:519
 msgid "Remove banner image"
 msgstr ""
 
@@ -1115,10 +1081,6 @@ msgstr ""
 msgid "Organize Events"
 msgstr ""
 
-#: app/view/admin/samples.php:26 app/view/admin/samples.php:27
-msgid "Samples"
-msgstr ""
-
 #: app/view/admin/settings.php:30
 msgid "All-in-One Event Calendar: Settings"
 msgstr ""
@@ -1170,71 +1132,63 @@ msgstr ""
 msgid "Cache Report"
 msgstr ""
 
-#: app/view/admin/settings.php:158
-msgid "Twitter"
-msgstr ""
-
-#: app/view/admin/settings.php:178
+#: app/view/admin/settings.php:172
 msgid "Please, Sign In to Timely Network."
 msgstr ""
 
-#: app/view/admin/settings.php:189 app/view/admin/tickets.php:125
-#: public/admin/box_ask_customer_review.php:113
-#: public/admin/box_ask_customer_review.php:127
-#: public/admin/box_ask_customer_review.php:141
-#: public/admin/box_ask_customer_review.php:159
+#: app/view/admin/settings.php:183 app/view/admin/tickets.php:125
 #: public/admin/box_event_cost.php:118 public/admin/box_event_cost.php:141
 #: public/admin/box_event_cost.php:333 public/admin/box_event_cost.php:346
 msgid "This field is required."
 msgstr ""
 
-#: app/view/admin/settings.php:190 app/view/event/ticket.php:25
+#: app/view/admin/settings.php:184 app/view/event/ticket.php:25
 msgid "Register"
 msgstr ""
 
-#: app/view/admin/settings.php:191
+#: app/view/admin/settings.php:185
 msgid "Sign in"
 msgstr ""
 
-#: app/view/admin/settings.php:195
+#: app/view/admin/settings.php:189
 msgid "Sign out"
 msgstr ""
 
-#: app/view/admin/settings.php:197
+#: app/view/admin/settings.php:191
 msgid "Full Name:"
 msgstr ""
 
-#: app/view/admin/settings.php:198
+#: app/view/admin/settings.php:192
 msgid "Hide form"
 msgstr ""
 
-#: app/view/admin/settings.php:199
+#: app/view/admin/settings.php:193
 msgid "Show form"
 msgstr ""
 
-#: app/view/admin/settings.php:200
+#: app/view/admin/settings.php:194
 msgid "Email:"
 msgstr ""
 
-#: app/view/admin/settings.php:201
+#: app/view/admin/settings.php:195
 msgid "Password:"
 msgstr ""
 
-#: app/view/admin/settings.php:202
+#: app/view/admin/settings.php:196
 msgid "Confirm Password:"
 msgstr ""
 
-#: app/view/admin/settings.php:203
+#: app/view/admin/settings.php:197
 msgid "Phone Number:"
 msgstr ""
 
-#: app/view/admin/settings.php:204
+#: app/view/admin/settings.php:198
 msgid ""
 "I confirm that I have read, understand and agree with the <a href=\"https://"
 "time.ly/tos\">terms of service</a>."
 msgstr ""
 
-#: app/view/admin/settings.php:207
+#: app/view/admin/settings.php:201
 msgid ""
 "<h4>Attention Required:</h4>If you choose to sign-out of the API Timely "
 "Network this will close all the created tickets and remove user access to "
@@ -1242,68 +1196,68 @@ msgid ""
 "closed”."
 msgstr ""
 
-#: app/view/admin/settings.php:210 public/admin/box_repeat.php:116
+#: app/view/admin/settings.php:204 public/admin/box_repeat.php:116
 #: public/admin/plugins/ics/import_feed.php:127
 msgid "Cancel"
 msgstr ""
 
-#: app/view/admin/settings.php:211 app/view/admin/tickets.php:134
+#: app/view/admin/settings.php:205 app/view/admin/tickets.php:134
 msgid "Sign Out"
 msgstr ""
 
-#: app/view/admin/settings.php:212
+#: app/view/admin/settings.php:206
 msgid "Sign Up"
 msgstr ""
 
-#: app/view/admin/settings.php:213
+#: app/view/admin/settings.php:207
 msgid "Sign In"
 msgstr ""
 
-#: app/view/admin/settings.php:214
+#: app/view/admin/settings.php:208
 msgid "Calendar Type:"
 msgstr ""
 
-#: app/view/admin/settings.php:216
+#: app/view/admin/settings.php:210
 msgid "Tourism"
 msgstr ""
 
-#: app/view/admin/settings.php:217
+#: app/view/admin/settings.php:211
 msgid "Media"
 msgstr ""
 
-#: app/view/admin/settings.php:218
+#: app/view/admin/settings.php:212
 msgid "Community Hubs"
 msgstr ""
 
-#: app/view/admin/settings.php:219
+#: app/view/admin/settings.php:213
 msgid "Education"
 msgstr ""
 
-#: app/view/admin/settings.php:220
+#: app/view/admin/settings.php:214
 msgid "Venue/Business"
 msgstr ""
 
-#: app/view/admin/settings.php:221
+#: app/view/admin/settings.php:215
 msgid "Artist/Performer"
 msgstr ""
 
-#: app/view/admin/settings.php:222
+#: app/view/admin/settings.php:216
 msgid "Church/Spiritual"
 msgstr ""
 
-#: app/view/admin/settings.php:223
+#: app/view/admin/settings.php:217
 msgid "Association/Group"
 msgstr ""
 
-#: app/view/admin/settings.php:224
+#: app/view/admin/settings.php:218
 msgid "Other"
 msgstr ""
 
-#: app/view/admin/settings.php:236
+#: app/view/admin/settings.php:230
 msgid "Save Settings"
 msgstr ""
 
-#: app/view/admin/settings.php:243
+#: app/view/admin/settings.php:237
 msgid ""
 "If the form below is not working please follow <a href=\"%s\">this link</a>."
 msgstr ""
@@ -1704,8 +1658,8 @@ msgstr ""
 msgid "Categories:"
 msgstr ""
 
-#: app/view/calendar/view/agenda.php:208 lib/theme/list.php:320
-#: public/admin/themes.php:28
+#: app/view/calendar/view/agenda.php:208 lib/theme/list.php:336
+#: public/admin/themes.php:29
 msgid "Tags:"
 msgstr ""
 
@@ -1883,26 +1837,26 @@ msgstr ""
 msgid "Buy Tickets"
 msgstr ""
 
-#: app/view/event/single.php:125
+#: app/view/event/single.php:127
 msgid "Edit this occurrence (%s)"
 msgstr ""
 
-#: app/view/event/single.php:215
+#: app/view/event/single.php:217
 msgid "No data"
 msgstr ""
 
-#: app/view/event/single.php:233
+#: app/view/event/single.php:235
 msgid ""
 "This post was replicated from another site's <a href=\"%s\" title="
 "\"iCalendar feed\"><i class=\"ai1ec-fa ai1ec-fa-calendar\"></i> calendar "
 "feed</a>."
 msgstr ""
 
-#: app/view/event/single.php:237
+#: app/view/event/single.php:239
 msgid "This post was imported from a CSV/ICS file."
 msgstr ""
 
-#: app/view/event/single.php:250
+#: app/view/event/single.php:252
 msgid "View original"
 msgstr ""
 
@@ -1930,14 +1884,6 @@ msgstr ""
 
 #: app/view/event/time.php:166
 msgid ", and "
-msgstr ""
-
-#: cache/twig/dc/78/b950182efb8f436b144938fb0dc48cf395d7daabe20293234dbcf2b26545.php:38
-msgid "Excludes: "
-msgstr ""
-
-#: cache/twig/dc/78/b950182efb8f436b144938fb0dc48cf395d7daabe20293234dbcf2b26545.php:49
-msgid "Repeats"
 msgstr ""
 
 #: lib/calendar-feed/ics.php:40
@@ -2397,7 +2343,7 @@ msgid ""
 "already displays the calendar."
 msgstr ""
 
-#: lib/import-export/ics.php:881
+#: lib/import-export/ics.php:884
 msgid "Tickets: "
 msgstr ""
 
@@ -2647,25 +2593,25 @@ msgstr ""
 msgid "Activate &#8220;%s&#8221;"
 msgstr ""
 
-#: lib/theme/list.php:264
-msgid "Activate"
+#: lib/theme/list.php:269 lib/theme/list.php:274
+msgid "Get Extended Views add-on"
 msgstr ""
 
 #. translators: 1: theme title, 2: theme version, 3: theme author
-#: lib/theme/list.php:281 public/admin/themes.php:24
+#: lib/theme/list.php:297 public/admin/themes.php:25
 msgid "%1$s %2$s by %3$s"
 msgstr ""
 
 #. translators: 1: theme title, 2:  template dir, 3: stylesheet_dir, 4: theme
 #. title, 5: parent_theme
-#: lib/theme/list.php:293
+#: lib/theme/list.php:309
 msgid ""
 "The template files are located in <code>%2$s</code>. The stylesheet files "
 "are located in <code>%3$s</code>. <strong>%4$s</strong> uses templates from "
 "<strong>%5$s</strong>. Changes made to the templates will affect both themes."
 msgstr ""
 
-#: lib/theme/list.php:308
+#: lib/theme/list.php:324
 msgid "All of this theme&#8217;s files are located in <code>%2$s</code>."
 msgstr ""
 
@@ -2746,91 +2692,6 @@ msgstr ""
 msgid "Hide this widget on calendar page"
 msgstr ""
 
-#: public/admin/box_ask_customer_review.php:5
-msgid "Enjoying All-in-One Event Calendar?"
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:13
-msgid "Not really"
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:20
-msgid "Yes!"
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:33
-msgid ""
-"Please rate our FREE calendar with 5 stars to help keeping it in Wordpress."
-"org."
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:34
-msgid "Thanks from the hard working fellas at Time.ly."
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:43
-#: public/admin/box_ask_customer_review.php:76
-msgid "No, thanks"
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:51
-#: public/admin/box_ask_customer_review.php:85
-msgid "Ok, sure!"
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:67
-msgid "Would you please give us some feedback on how can we improve?"
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:102
-msgid "Please provide some feedback"
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:109
-msgid "Message:"
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:122
-msgid "Name:"
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:137
-#: public/admin/box_event_contact.php:48
-msgid "E-mail:"
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:144
-msgid "E-mail is invalid."
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:155
-msgid "Site URL:"
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:162
-msgid "Site URL is invalid."
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:174
-msgid "Thank you for being our customer,"
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:175
-msgid "Time.ly team"
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:176
-msgid "info@time.ly"
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:182
-msgid "Sending..."
-msgstr ""
-
-#: public/admin/box_ask_customer_review.php:183
-msgid "Send Message"
-msgstr ""
-
 #: public/admin/box_event_children.php:12
 msgid "Base recurrence event"
 msgstr ""
@@ -2861,6 +2722,10 @@ msgstr ""
 
 #: public/admin/box_event_contact.php:35
 msgid "Phone:"
+msgstr ""
+
+#: public/admin/box_event_contact.php:48
+msgid "E-mail:"
 msgstr ""
 
 #: public/admin/box_event_contact.php:61
@@ -3063,6 +2928,10 @@ msgid ""
 "to Eventbrite."
 msgstr ""
 
+#: public/admin/box_eventbrite.php:32
+msgid "Name"
+msgstr ""
+
 #: public/admin/box_eventbrite.php:42
 msgid "Description"
 msgstr ""
@@ -3154,40 +3023,38 @@ msgid "Apply"
 msgstr ""
 
 #: public/admin/box_support.php:5
-msgid "Timely"
-msgstr ""
-
-#: public/admin/box_support.php:12
 msgid ""
 "Timely’s All-in-One Event Calendar is a<br />revolutionary new way to find "
 "and share events."
 msgstr ""
 
-#: public/admin/box_support.php:20
+#: public/admin/box_support.php:10
+msgid "Timely"
+msgstr ""
+
+#: public/admin/box_support.php:21
+msgid "EXTENDED VIEWS"
+msgstr ""
+
+#: public/admin/box_support.php:24
+msgid ""
+"Add beautiful and dynamic \"Posterboard\" and \"Stream\" layouts for your "
+"events.<br>Download the add-on, install and activate it, and you're set."
+msgstr ""
+
+#: public/admin/box_support.php:39
 msgid "Guide"
 msgstr ""
 
-#: public/admin/box_support.php:28
+#: public/admin/box_support.php:47
 msgid "Support"
 msgstr ""
 
-#: public/admin/box_support.php:36
+#: public/admin/box_support.php:55
 msgid "Videos"
 msgstr ""
 
-#: public/admin/box_support.php:44
-msgid "More Features"
-msgstr ""
-
-#: public/admin/box_support.php:52
-msgid "Timely News"
-msgstr ""
-
-#: public/admin/box_support.php:56
-msgid "view all news"
-msgstr ""
-
-#: public/admin/box_support.php:131
+#: public/admin/box_support.php:82
 msgid "Follow @_Timely"
 msgstr ""
 
@@ -3398,16 +3265,16 @@ msgstr ""
 #: public/admin/plugins/ics/import_feed.php:26
 msgid ""
 "<b>You don't have a subscription for this feature.</b><br>\n"
-"        Please <a href=\"https://time.ly/pricing/\" target=\"_blank"
-"\">upgrade here</a> to a plan that\n"
+"        Please <a href=\"https://time.ly/hosted-calendar-addons/\" target="
+"\"_blank\">upgrade here</a> to a plan that\n"
 "        supports \"Import Feeds\"."
 msgstr ""
 
 #: public/admin/plugins/ics/import_feed.php:45
 msgid ""
 "<b>You have reached the limit of how many feeds you can import.</b><br>\n"
-"        Please sign up for EventBoost plan <a href=\"https://time.ly/"
-"eventboost/\" target=\"_blank\">here</a>."
+"        Please sign up for EventBoost plan <a href=\"https://time.ly/hosted-"
+"calendar-addons/\" target=\"_blank\">here</a>."
 msgstr ""
 
 #: public/admin/plugins/ics/import_feed.php:89
@@ -3547,228 +3414,271 @@ msgstr ""
 msgid "All-in-One Event Calendar Settings »"
 msgstr ""
 
-#: public/admin/themes.php:17
+#: public/admin/themes.php:18
 msgid "Current Calendar Theme"
 msgstr ""
 
-#: public/admin/themes.php:20
+#: public/admin/themes.php:21
 msgid "Current theme preview"
 msgstr ""
 
-#: public/admin/themes.php:46
+#: public/admin/themes.php:47
 msgid "Available Calendar Themes"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:5
 #: public/themes-ai1ec/umbra/less/user_variables.php:5
 #: public/themes-ai1ec/vortex/less/user_variables.php:5
 msgid "Body background"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:11
 #: public/themes-ai1ec/umbra/less/user_variables.php:11
 #: public/themes-ai1ec/vortex/less/user_variables.php:11
 msgid "Text color"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:17
 #: public/themes-ai1ec/umbra/less/user_variables.php:17
 #: public/themes-ai1ec/vortex/less/user_variables.php:17
 msgid "Text emboss"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:23
 #: public/themes-ai1ec/umbra/less/user_variables.php:23
 #: public/themes-ai1ec/vortex/less/user_variables.php:23
 msgid "Link"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:29
 #: public/themes-ai1ec/umbra/less/user_variables.php:29
 #: public/themes-ai1ec/vortex/less/user_variables.php:29
 msgid "Link (hover)"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:35
 #: public/themes-ai1ec/umbra/less/user_variables.php:35
 #: public/themes-ai1ec/vortex/less/user_variables.php:35
 msgid "Base font"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:41
 #: public/themes-ai1ec/umbra/less/user_variables.php:41
 #: public/themes-ai1ec/vortex/less/user_variables.php:41
 msgid "Base font size"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:47
 #: public/themes-ai1ec/umbra/less/user_variables.php:47
 #: public/themes-ai1ec/vortex/less/user_variables.php:47
 msgid "Table background"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:53
 #: public/themes-ai1ec/umbra/less/user_variables.php:53
 #: public/themes-ai1ec/vortex/less/user_variables.php:53
 msgid "Table header background"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:59
 #: public/themes-ai1ec/umbra/less/user_variables.php:59
 #: public/themes-ai1ec/vortex/less/user_variables.php:59
 msgid "Table header text"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:65
 #: public/themes-ai1ec/umbra/less/user_variables.php:65
 #: public/themes-ai1ec/vortex/less/user_variables.php:65
 msgid "Primary brand color"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:71
 #: public/themes-ai1ec/umbra/less/user_variables.php:71
 #: public/themes-ai1ec/vortex/less/user_variables.php:71
 msgid "Button background"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:77
 #: public/themes-ai1ec/umbra/less/user_variables.php:77
 #: public/themes-ai1ec/vortex/less/user_variables.php:77
 msgid "Button border"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:83
 #: public/themes-ai1ec/umbra/less/user_variables.php:83
 #: public/themes-ai1ec/vortex/less/user_variables.php:83
 msgid "Button text"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:89
 #: public/themes-ai1ec/umbra/less/user_variables.php:89
 #: public/themes-ai1ec/vortex/less/user_variables.php:89
 msgid "Input field text"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:95
 #: public/themes-ai1ec/umbra/less/user_variables.php:95
 #: public/themes-ai1ec/vortex/less/user_variables.php:95
 msgid "Input field background"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:101
 #: public/themes-ai1ec/umbra/less/user_variables.php:101
 #: public/themes-ai1ec/vortex/less/user_variables.php:101
 msgid "Input field border"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:107
 #: public/themes-ai1ec/umbra/less/user_variables.php:107
 #: public/themes-ai1ec/vortex/less/user_variables.php:107
 msgid "Input field border (focus)"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:113
 #: public/themes-ai1ec/umbra/less/user_variables.php:113
 #: public/themes-ai1ec/vortex/less/user_variables.php:113
 msgid "Input field background (disabled)"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:119
 #: public/themes-ai1ec/umbra/less/user_variables.php:119
 #: public/themes-ai1ec/vortex/less/user_variables.php:119
 msgid "Field label"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:125
 #: public/themes-ai1ec/umbra/less/user_variables.php:125
 #: public/themes-ai1ec/vortex/less/user_variables.php:125
 msgid "Dropdown list background"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:131
 #: public/themes-ai1ec/umbra/less/user_variables.php:131
 #: public/themes-ai1ec/vortex/less/user_variables.php:131
 msgid "Dropdown list border"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:137
 #: public/themes-ai1ec/umbra/less/user_variables.php:137
 #: public/themes-ai1ec/vortex/less/user_variables.php:137
 msgid "List item text"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:143
 #: public/themes-ai1ec/umbra/less/user_variables.php:143
 #: public/themes-ai1ec/vortex/less/user_variables.php:143
 msgid "List item text (active/hover)"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:149
 #: public/themes-ai1ec/umbra/less/user_variables.php:149
 #: public/themes-ai1ec/vortex/less/user_variables.php:149
 msgid "List item background (active/hover)"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:155
 #: public/themes-ai1ec/umbra/less/user_variables.php:155
 #: public/themes-ai1ec/vortex/less/user_variables.php:155
 msgid "Input field placeholder text"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:161
 #: public/themes-ai1ec/umbra/less/user_variables.php:161
 #: public/themes-ai1ec/vortex/less/user_variables.php:161
 msgid "Today color"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:167
 #: public/themes-ai1ec/umbra/less/user_variables.php:167
 #: public/themes-ai1ec/vortex/less/user_variables.php:167
 msgid "All-day badge color"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:173
 #: public/themes-ai1ec/umbra/less/user_variables.php:173
 #: public/themes-ai1ec/vortex/less/user_variables.php:173
 msgid "Event image shadow"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:179
 #: public/themes-ai1ec/umbra/less/user_variables.php:179
 #: public/themes-ai1ec/vortex/less/user_variables.php:179
 msgid "Event default color"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:185
 #: public/themes-ai1ec/umbra/less/user_variables.php:185
 #: public/themes-ai1ec/vortex/less/user_variables.php:185
 msgid "Event default color (hover)"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:191
 #: public/themes-ai1ec/umbra/less/user_variables.php:191
 #: public/themes-ai1ec/vortex/less/user_variables.php:191
 msgid "All-day/multi-day event stub text"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:197
 #: public/themes-ai1ec/umbra/less/user_variables.php:197
 #: public/themes-ai1ec/vortex/less/user_variables.php:197
 msgid "All-day/multi-day event stub text shadow"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:203
 #: public/themes-ai1ec/umbra/less/user_variables.php:203
 #: public/themes-ai1ec/vortex/less/user_variables.php:203
 msgid "Event border"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:209
 #: public/themes-ai1ec/umbra/less/user_variables.php:209
 #: public/themes-ai1ec/vortex/less/user_variables.php:209
 msgid "Event background"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:215
 #: public/themes-ai1ec/umbra/less/user_variables.php:215
 #: public/themes-ai1ec/vortex/less/user_variables.php:215
 msgid "Event time background"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:221
 #: public/themes-ai1ec/umbra/less/user_variables.php:221
 #: public/themes-ai1ec/vortex/less/user_variables.php:221
 msgid "Event text"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:227
 #: public/themes-ai1ec/umbra/less/user_variables.php:227
 #: public/themes-ai1ec/vortex/less/user_variables.php:227
 msgid "Month view date background"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:233
 #: public/themes-ai1ec/umbra/less/user_variables.php:233
 #: public/themes-ai1ec/vortex/less/user_variables.php:233
 msgid "Week/day view now marker"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:239
 #: public/themes-ai1ec/umbra/less/user_variables.php:239
 #: public/themes-ai1ec/vortex/less/user_variables.php:239
 msgid "Date label accent color"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:245
 #: public/themes-ai1ec/umbra/less/user_variables.php:245
 #: public/themes-ai1ec/vortex/less/user_variables.php:245
 msgid "Date label background"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:251
 #: public/themes-ai1ec/umbra/less/user_variables.php:251
 #: public/themes-ai1ec/vortex/less/user_variables.php:251
 msgid "Date background"
 msgstr ""
 
+#: public/themes-ai1ec/journey/less/user_variables.php:257
 #: public/themes-ai1ec/umbra/less/user_variables.php:257
 #: public/themes-ai1ec/vortex/less/user_variables.php:257
 msgid "Today background"

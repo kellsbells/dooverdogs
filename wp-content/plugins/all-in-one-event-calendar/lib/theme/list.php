@@ -258,10 +258,26 @@ class Ai1ec_Theme_List extends WP_List_Table {
                         $title
                     )
                 );
+
+                $activate_link_text = Ai1ec_I18n::__( 'Activate' );
+
+                if ( $theme_name == 'journey' && ! is_plugin_active( 'all-in-one-event-calendar-extended-views/all-in-one-event-calendar-extended-views.php' ) ) {
+                    $activate_link  = 'https://dashboard.time.ly/checkout/extended_views" target="_blank';
+
+                    $activate_text  = esc_attr(
+                        sprintf(
+                            Ai1ec_I18n::__( 'Get Extended Views add-on' ),
+                            $title
+                        )
+                    );
+
+                    $activate_link_text = Ai1ec_I18n::__( 'Get Extended Views add-on' );
+                }
+
                 $actions        = array();
                 $actions[]      = '<a href="' . $activate_link .
                     '" class="activatelink" title="' . $activate_text . '">' .
-                    Ai1ec_I18n::__( 'Activate' ) . '</a>';
+                    $activate_link_text . '</a>';
 
                 $actions = apply_filters(
                     'theme_action_links',

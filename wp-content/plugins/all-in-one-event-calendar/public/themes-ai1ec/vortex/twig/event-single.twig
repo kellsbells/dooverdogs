@@ -129,19 +129,19 @@
 			</div>
 		</div>
 	{% endif %}
-	
+
 	{% if filter_groups is not empty %}
 		{% for filter_group in filter_groups %}
 			<div class="ai1ec-categories ai1ec-row">
 				<div class="ai1ec-field-label {{ col1 }} ai1ec-col-xs-1">
 					<i class="ai1ec-fa {{ filter_group.icon_name }} ai1ec-tooltip-trigger"
 						title="{{ filter_group.text | e( 'html_attr' ) }}"></i>
-				</div>		
+				</div>
 				<div class="ai1ec-field-value {{ col2 }} ai1ec-col-xs-10">
 					{{ filter_group.html_value | raw }}
 				</div>
 			</div>
-		{% endfor %}	
+		{% endfor %}
 	{% endif %}
 
 	{% if filter_groups is not empty %}

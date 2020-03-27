@@ -11,30 +11,11 @@
 		 * Initialize site
 		 */
 		init: function() {
-			Site.smoothScroll();
 			Site.mobileNav();
-			Site.testimonialSlider();
 			Site.stickyNav();
 			Site.setActiveImage();
 			Site.updateActiveImage();
 		},
-
-
-		smoothScroll: function() {
-			$('a[href*="#"]:not([href="#"])').click(function() {
-			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			      	var target = $(this.hash);
-			      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			      	if (target.length) {
-			      	  	$('html, body').animate({
-			      	  	  scrollTop: target.offset().top
-			      	  	}, 1000);
-			      	  	return false;
-			      	}
-			    }
-			});
-		},
-
 		
 
 		setActiveImage: function() {
@@ -106,27 +87,6 @@
 				    }
 				});
 			}
-		},
-
-		testimonialSlider: function() {
-			$('.js-testimonials').slick({
-				infinite: true,
-				slidesToShow: 2,
-				slidesToScroll: 1,
-				autoplay: true,
-  				autoplaySpeed: 2000,
-  				arrows: false,
-  				dots: true,
-  				adaptiveHeight: true,
-  				responsive: [
-  					{
-  						breakpoint: 800,
-  						settings: {
-  							slidesToShow: 1,
-  						}
-  					}
-  				]
-			});
 		},
 	};
 

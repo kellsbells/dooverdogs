@@ -723,14 +723,6 @@ class Ai1ec_Front_Controller {
                 array( 'calendar-feed.ics', 'handle_feeds_page_post' )
             );
             $dispatcher->register_action(
-                'wp_ajax_ai1ec_send_feedback_message',
-                array( 'model.review', 'send_feedback_message' )
-            );
-            $dispatcher->register_action(
-                'wp_ajax_ai1ec_save_feedback_review',
-                array( 'model.review', 'save_feedback_review' )
-            );
-            $dispatcher->register_action(
                 'network_admin_notices',
                 array( 'notification.admin', 'send' )
             );
@@ -877,7 +869,10 @@ class Ai1ec_Front_Controller {
                 'admin_menu',
                 array( 'view.admin.tickets', 'add_page' )
             );
-
+            $dispatcher->register_action(
+                'admin_menu',
+                array( 'view.admin.activate', 'add_page' )
+            );
         } else { // ! is_admin()
             $dispatcher->register_action(
                 'after_setup_theme',

@@ -274,7 +274,7 @@ abstract class Ai1ec_Api_Abstract extends Ai1ec_App {
             }
             // Try to find the calendar in the API
             $ticketing_calendar_id = $this->_find_user_calendar();
-            if ( 0 < $ticketing_calendar_id  ) {
+            if ( 0 < $ticketing_calendar_id ) {
                 $this->save_calendar_id( $ticketing_calendar_id );
 
                 return $ticketing_calendar_id;
@@ -558,7 +558,7 @@ abstract class Ai1ec_Api_Abstract extends Ai1ec_App {
      * Make a post request to the api
      * @param rest_endpoint Partial URL that can include {calendar_id} that will be replaced by the current calendar signed
      */
-    public function call_api( $method, $endpoint, $body = null, $decode_response_body = true, $custom_headers = null  ) {
+    public function call_api( $method, $endpoint, $body = null, $decode_response_body = true, $custom_headers = null ) {
         $calendar_id = $this->_get_ticket_calendar();
         if ( 0 >= $calendar_id ) {
             return false;

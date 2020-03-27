@@ -16,18 +16,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800i|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300&display=swap" rel="stylesheet" defer>
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<title>Do Over Dogs Resuce - a Second Chance at Life</title>
+<title>Do Over Dogs Rescue - a Second Chance at Life</title>
 <meta name="description" content="Based in Broomfield, Colorado Do Over Dogs is a 501(c)(3) dog rescue that gives at-risk dogs from the shelter environment a second chance at life.">
-<link rel="canonical" href="http://www.dooverdogs.com" />
+<link rel="canonical" href="https://dooverdogs.com"/>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://kit.fontawesome.com/31052e2e18.js"></script>
+<script src="https://kit.fontawesome.com/31052e2e18.js" defer></script>
 
 
 <?php 
@@ -44,13 +41,13 @@ $imagedir = get_stylesheet_directory_uri() . "/assets/img";
 
 	
 
-	<header id="header" class="header-desktop" role="banner">
+	<header class="header-desktop" role="banner">
 
 		<div class="header__container">
 			<div class="header__navigation">
-				<nav id="site-navigation" class="nav-item" role="navigation">
-					<a href="/" class="header__logo">
-						<img src="<?php echo $imagedir ?>/dod-logo-text-white-abbr.png">
+				<nav class="nav-item" role="navigation">
+					<a href="/" class="header__logo" aria-label="Return Home">
+						<img src="<?php echo $imagedir ?>/dod-logo-text-white-abbr.png" alt="Do Over Dogs Logo">
 					</a>
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
@@ -62,10 +59,10 @@ $imagedir = get_stylesheet_directory_uri() . "/assets/img";
 
 	</header>
 
-	<header id="header" class="header-mobile" role="banner">
+	<header class="header-mobile" role="banner">
 		<div class="fixed-nav">
 			<a href="<?php echo home_url(); ?>" class="site-branding nav-item">
-				<img class="mobile-logo" src="<?php echo $imagedir ?>/dod-logo-text-white-abbr.png"/>
+				<img class="mobile-logo" src="<?php echo $imagedir ?>/dod-logo-text-white-abbr.png" alt="Do Over Dogs Logo"/>
 			</a>
 			<div class="hamburger-helper">
                 <div class="hamburger" id="hamburger-6">
@@ -77,7 +74,7 @@ $imagedir = get_stylesheet_directory_uri() . "/assets/img";
 		</div>
 		<div class="dropdown">
 			<div class="header__container">
-				<nav id="site-navigation" class="nav-item" role="navigation">
+				<nav class="nav-item" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav>
 			</div>
@@ -85,4 +82,5 @@ $imagedir = get_stylesheet_directory_uri() . "/assets/img";
 	</header>
 
 	<div id="content" class="site-content">
+
 

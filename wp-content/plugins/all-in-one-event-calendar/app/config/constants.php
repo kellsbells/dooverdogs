@@ -50,7 +50,7 @@ function ai1ec_initiate_constants( $ai1ec_base_dir, $ai1ec_base_url ) {
     // = Plugin Version =
     // ==================
     if ( ! defined( 'AI1EC_VERSION' ) ) {
-define( 'AI1EC_VERSION', '2.5.32' );
+define( 'AI1EC_VERSION', '2.6.2' );
     }
 
     // ================
@@ -202,7 +202,7 @@ define( 'AI1EC_VERSION', '2.5.32' );
     // = AI1EC Core themes =
     // =====================
     if ( ! defined( 'AI1EC_CORE_THEMES' ) ) {
-        define( 'AI1EC_CORE_THEMES', 'vortex,umbra,gamma,plana' );
+        define( 'AI1EC_CORE_THEMES', 'vortex,umbra,gamma,plana,journey' );
     }
 
     // ===================

@@ -38,22 +38,14 @@ $about = get_post_meta( get_the_ID(), '_dod_about', true );
 						<div>Age: <?php echo $age; ?></div>
 					</div>
 					
-					<div class="about"><?php echo $about; ?></div>
+					<div class="about">
+					<p><?php echo $about; ?></p>
+					<a class="button" href="/adoption-application-1">Fill Out An Adoption Application</a>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="dog__contact">
-			<div class="container">
-				<div class="wrapper">
-					<h2>Adopt <?php the_title();?></h2>
-					<p>Love <?php the_title();?> as much as we do? Fill out the application below and we'll get back to you as soon as possible.</p>
-					<div class="contact-form">
-						<?php echo do_shortcode( '[contact-form-7 id="46" title="Adoption Form"]' ); ?>
-					</div>
-				</div>
-			</div>
-		</div>	
 	</div>
 
 </article><!-- #post-## -->

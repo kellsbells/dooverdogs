@@ -34,7 +34,7 @@ function dod_setup() {
 		$form = do_shortcode( $form );
 		return $form;
 	}
-	add_filter( ‘wpcf7_form_elements’, ‘shortcodes_in_cf7’ );
+	add_filter( '‘wpcf7_form_elements’', '‘shortcodes_in_cf7’' );
 
 		
 
@@ -105,6 +105,17 @@ function dod_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'dod_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'dod_content_width', 0 );
+
+
+//Page Slug Body Class
+function add_slug_body_class( $classes ) {
+global $post;
+if ( isset( $post ) ) {
+$classes[] = $post->post_type . '-' . $post->post_name;
+}
+return $classes;
+}
+add_filter( 'body_class', 'add_slug_body_class' );
 
 /****
  ** Register widget area.

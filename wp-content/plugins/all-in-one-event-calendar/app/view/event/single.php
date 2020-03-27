@@ -110,6 +110,8 @@ class Ai1ec_View_Event_Single extends Ai1ec_Base {
             'end'                     => $event->get( 'end' ),
             'cost'                    => $event->get( 'cost' ),
             'instance_id'             => $event->get( 'instance_id' ),
+            'title'                   => $event->get( 'post' )->post_title,
+            'description'             => $event->get( 'post' )->post_content,
         );
 
         if (

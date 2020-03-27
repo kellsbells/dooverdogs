@@ -2,8 +2,9 @@
 Contributors: uchu, calvinyeh, raquelleira, renatotbueno, domanb, elirenato, hubrik, vtowel, yani.iliev, nicolapeluchetti, jbutkus, lpawlik, bangelov
 Tags: calendar, event, ical, feed, ics, icalendar, sync, aggregator, google, venue, calendar widget, events widget
 Requires at least: 3.5
-Tested up to: 4.9.8
-Stable tag: 2.5.32
+Tested up to: 5.3
+Stable tag: 2.6.2
+Requires PHP: 5.4
 License: GNU General Public License, version 3 (GPL-3.0)
 
 An events calendar system with multiple views, upcoming events widget, color-coded categories, recurrence, and import/export of .ics feeds.
@@ -14,16 +15,16 @@ The [All-in-One Event Calendar](https://time.ly/) from [Timely](https://time.ly/
 
 Our events calendar is easy to manage. Combines clean visual design with a powerful set of features to create the most advanced website calendar system available for WordPress.
 
-= Get Add-ons =
+= Get the add-on =
 
-Download add-ons at [Time.ly](https://time.ly) to get more features, like:
+Download the [Time.ly](https://time.ly) hosted software and get more features like:
 
-* [Extended Views](https://time.ly/downloads/extended-views/)
-* [Frontend Submission form](https://time.ly/downloads/front-end-event-form/)
-* [Super Widget](https://time.ly/downloads/superwidget/)
-* [Venues](https://time.ly/downloads/venues/)
-* [Twitter integration](https://time.ly/downloads/twitter/)
-* and [more](https://time.ly/wordpress-calendar-plugin/addons/)...
+* [Extended Views](https://time.ly/wordpress-calendar-plugins-addons)
+* [Frontend Submission form](https://time.ly/timely-website-events-calendar)
+* [Ticketing](https://time.ly/timely-website-events-calendar)
+* [Venues](https://time.ly/timely-website-events-calendar)
+* [Twitter integration](https://time.ly/timely-website-events-calendar)
+* and [more](https://time.ly/timely-website-events-calendar)...
 
 = Import and Export Events =
 
@@ -82,7 +83,6 @@ You can help translate by going to [https://translate.time.ly](https://translate
 = Helpful Links =
 
 * [**Access our User Guide**](https://time.ly/document/user-guide/).
-* [**Raise feature ideas**](https://ideas.time.ly/).
 
 == Frequently Asked Questions ==
 
@@ -122,6 +122,53 @@ You can help translate by going to [https://translate.time.ly](https://translate
 **[ai1ec exact_date="5-10-2017"]**
 
 == Changelog ==
+
+= Version 2.6.2 =
+* Improved stability: Code cleanup.
+
+= Version 2.6.1 =
+* Fixed: In some cases the activation page would refresh automatically.
+
+= Version 2.6.0 =
+* Added new and integrated account activation process.
+
+= Version 2.5.44 =
+* Updated support and products links.
+
+= Version 2.5.43 =
+* Fixed: Addon menu was not being displaying correctly.
+
+= Version 2.5.42 =
+* Removed "Samples" from menu.
+
+= Version 2.5.41 =
+* Google reCAPTCHA script URL has been updated.
+
+= Version 2.5.40 =
+* Updated: iCalcreator library has been updated to version 2.26.9.
+* Fixed: Import Feeds - Imported events with recurrence rules set weren't being imported correctly when using PHP 7.2.
+
+= Version 2.5.39 =
+* Fixed XSS Security vulnerability by sanitizing the event input.
+
+= Version 2.5.38 =
+* Fixed: Invalid file location for the current theme options would throw HTTP 500 error on specific server environments.
+
+= Version 2.5.37 =
+* Fixed: Exporting as XML wasn't working as expected.
+* Fixed compatibility with PHP 5.2 and 5.3.
+
+= Version 2.5.36 =
+* Updating and fixing compatibility with CSV addon.
+
+= Version 2.5.35 =
+* Bumping version
+
+= Version 2.5.34 =
+* Fixed: iCalcreator library has been updated to the latest version, fixing problems with PHP 7.2.
+
+= Version 2.5.33 =
+* Fixed: iCalcreator library has been updated to the latest version, fixing problems with PHP 7.2.
 
 = Version 2.5.32 =
 * Fixed: Subscribe dropdown wasn't working properly.

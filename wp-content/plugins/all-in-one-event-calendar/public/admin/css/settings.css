@@ -34,7 +34,7 @@
 	}
 }
 #ai1ec-support {
-	background: #f9f9f9;
+	background: #fff;
 	min-width: 350px;
 }
 #ai1ec-support div.inside {
@@ -50,13 +50,53 @@
 #ai1ec-support h2:first-line {
   white-space: nowrap;
 }
-#ai1ec-support .timely-logo a {
-	background: url(../img/timely-logo.png) no-repeat center center;
-	-webkit-background-size: 250px auto;
-	background-size: 250px auto;
-	display: block;
-	height: 109px;
+#ai1ec-support .timely-logo {
+	width: 100px;
 }
+#ai1ec-support .timely-logo a {
+	background: url(../img/timely-logo2.png) no-repeat center center;
+	background-size: cover;
+	display: block;
+	height: 80px;
+	width: 80px;
+	position: relative;
+	top: -19px;
+}
+#ai1ec-support .timely-ev {
+	float: right;
+	width: calc(100% - 100px);
+	padding: 3px 26px 1px 26px;
+	font-size: 10px;
+}
+#ai1ec-support .timely-get-ev {
+	color: #fff;
+	text-transform: uppercase;
+	background: #86c046;
+	border-color: #86c046;
+	font-size: 16px;
+	padding: 10px 26px;
+	border-radius: 30px;
+	margin-top: 14px;
+	margin-left: -3px;
+}
+#ai1ec-support .hndle {
+	padding-left: 12px;
+}
+#ai1ec-support .timely-ev .timely-ev-title {
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+#ai1ec-support .timely-icon a {
+	margin-top: 30px;
+	background: url(../img/posterboard-icon.png) no-repeat center center;
+	background-size: contain;
+	display: block;
+	height: 100px;
+	width: 100px;
+	float: left;
+}
+
 #ai1ec-support .timely-intro {
 	text-align: center;
 }
@@ -616,17 +656,16 @@ div.ai1ec-form-group > .ai1ec-setting-fieldset {
 }
 .ai1ec-brought-by {
 	text-align: center;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.ai1ec-slogan {
+	font-size: 12px;
+	text-align: center;
 }
 .ai1ec-support-buttons.ai1ec-row .ai1ec-col-lg-3 {
 	padding: 0 7px;
 }
 .ai1ec-support-tab {
 	display: none;
-}
-.ai1ec-twitterinfo-wrap {
-	padding: 20px;
-	padding-top: 0;
-}
-#twitterinfo {
-	display: none !important;
 }
